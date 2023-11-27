@@ -1,3 +1,6 @@
+import facebookIcon from "../../public/socials/facebook-icon.svg"
+import githubIcon from "../../public/socials/github-icon.svg"
+import linkedinIcon from "../../public/socials/linkedin-icon.svg"
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -5,21 +8,20 @@ const Footer = () => {
     return (
         <footer>
             <div className="socmed">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/ericsamsalvador" target="_blank">FACEBOOK</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/ericsslvdr" target="_blank">GITHUB</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ericssalvador/" target="_blank">LINKEDIN</a>
-                    </li>
-                </ul>
+                <a href="https://www.facebook.com/ericsmslvdr/" target="_blank">
+                    <img src={facebookIcon} alt="" height={30} width={30} />
+                </a>
+                <a href="https://github.com/ericsmslvdr" target="_blank">
+                    <img src={githubIcon} alt="" height={34} width={34} />
+                </a>
+                <a href="https://www.linkedin.com/in/ericsmsalvador/" target="_blank">
+                    <img src={linkedinIcon} alt="" height={30} width={30} />
+                </a>
             </div>
             <p>
-                &copy;
                 {currentYear}
+                &nbsp;
+                &copy;
                 Eric Samuel Salvador
             </p>
         </footer>

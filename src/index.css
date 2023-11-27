@@ -41,6 +41,12 @@ section {
   flex-direction: column;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
 
 /* NAVBAR / HEADER */
 .navbar {
@@ -173,19 +179,23 @@ p {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 20%;
   background-color: var(--accent-color);
 }
 
-.socmed ul {
-  list-style-type: none;
+footer .socmed {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-.socmed ul li {
-  display: inline-block;
-  padding-right: 1rem;
+.socmed img {
+  transition-duration: 0.3s;
 }
 
-.socmed a:hover {
+.socmed img:hover {
   color: var(--secondary-color);
+  fill: #295b5a;
+  scale: 1.1;
 }
