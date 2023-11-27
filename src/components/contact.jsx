@@ -1,0 +1,14 @@
+
+const Contact = () => {
+    return (
+        <section id="contacts">
+            <div className="container">
+                <div class="section-title">
+                    <span>Contacts</span>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default Contact
