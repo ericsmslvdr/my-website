@@ -4,8 +4,9 @@ const Education = () => {
         <section id="education">
             <div className="container">
                 <div class="section-title">
-                    <span>Education</span>
+                    Education
                 </div>
+
             </div>
         </section>
     )

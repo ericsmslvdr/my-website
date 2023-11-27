@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
-            <div className="logo"><a href="#home">&lt;&#47;&gt; Eric Samuel Salvador</a></div>
+            <div className="logo"><a href="#home">&lt;ericsmslvdr&#47;&gt;</a></div>
             <div className="menu-bar">
                 <ul>
                     <li><a href="#home">HOME</a></li>

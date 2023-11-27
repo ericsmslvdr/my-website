@@ -1,6 +1,6 @@
-import facebookIcon from "../../public/socials/facebook-icon.svg"
-import githubIcon from "../../public/socials/github-icon.svg"
-import linkedinIcon from "../../public/socials/linkedin-icon.svg"
+import facebookIcon from "/socials/facebook-icon.svg"
+import githubIcon from "/socials/github-icon.svg"
+import linkedinIcon from "/socials/linkedin-icon.svg"
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();

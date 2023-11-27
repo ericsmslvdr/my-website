@@ -4,7 +4,7 @@ const Contact = () => {
         <section id="contacts">
             <div className="container">
                 <div class="section-title">
-                    <span>Contacts</span>
+                    Contacts
                 </div>
             </div>
         </section>

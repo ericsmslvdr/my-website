@@ -5,9 +5,6 @@
   --primary-color: #295b5a;
   --secondary-color: #2a3a37;
   --accent-color: #dccdc6;
-
-  --text-info: 1rem;
-  --text-title: 2rem;
 }
 
 * {
@@ -48,6 +45,14 @@ a {
   margin: 0;
 }
 
+.section-title {
+  width: 100%;
+  text-align: start;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+
 /* NAVBAR / HEADER */
 .navbar {
   display: flex;
@@ -64,7 +69,7 @@ a {
 .navbar.scrolled {
   background-color: var(--accent-color);
   border-bottom: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -90,77 +95,139 @@ a {
 }
 
 /* HOME SECTION */
-.container .name {
+.name {
   font-size: 6rem;
 }
 
-.container .address {
+.address {
   font-size: 2.5rem;
   color: var(--secondary-color);
 }
 
-.container .info {
+.info {
   font-size: 1.2rem;
   width: 50%;
   text-align: center;
 }
 
-.container .info span {
+.info span {
   color: var(--secondary-color);
 }
+
+.home-button-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.home-btn {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  height: 45px;
+  transition-duration: 0.3s;
+}
+
+.home-btn:hover {
+  scale: 1.04;
+}
+
 
 /* ABOUT SECTION */
 .about {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1.2rem;
   width: 100%;
 }
 
-.container .about-left-side {
+.about-info {
   background-color: #7a8eff;
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 50%;
 }
 
-.container .about-left-side span,
+.about-info span,
 p {
   text-align: start;
 }
 
-.container .about-left-side span {
+.about-info span {
   font-size: 1.5rem;
 }
 
-.container .about-left-side p {
+.about-info p {
   font-size: 1.2rem;
 }
 
-.container .about-right-side {
-  background-color: rgb(96, 102, 100);
+.about-skills {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 50%;
+  gap: 20px;
 }
 
-.container .about-right-side span,
-p {
+.about-skills span {
   text-align: start;
-}
-
-.container .about-right-side span {
   font-size: 1.5rem;
 }
 
+.technologies,
+.soft-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.soft-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.soft-skills-card {
+  background-color: red;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.icon-wrapper span {
+  font-size: 14px;
+  text-align: center;
+  color: var(--primary-color);
+}
 
 /* PROJECTS SECTION */
-.projects {
+.projects-wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-container {
+  height: 500px;
+  width: auto;
+  background-color: aquamarine;
+  border-radius: 12px;
+  padding: 10px;
 }
 
 /* CONTACT SECTION */
@@ -168,13 +235,6 @@ p {
   display: flex;
   align-items: center;
 }
-
-.section-title {
-  width: 100%;
-  background-color: #353535;
-}
-
-
 
 
 /* FOOTER */
