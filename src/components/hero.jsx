@@ -14,10 +14,12 @@ const Hero = () => {
                 </p>
                 <br />
                 <div className="home-button-wrapper">
-                    <div className="home-btn">
-                        <img src={resumeIcon} alt="" height={24} width={24} />
-                        Resume
-                    </div>
+                    <a href="https://drive.google.com/file/d/1timq96v9nz3DaIZDh2Iz6USCYDcMSlyn/view?usp=sharing"  target='_blank'>
+                        <div className="home-btn">
+                            <img src={resumeIcon} alt="" height={24} width={24} />
+                            Resume
+                        </div>
+                    </a>
                     <a href="#contacts">
                         <div className="home-btn">
                             Contact Me!
