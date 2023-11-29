@@ -197,7 +197,7 @@ p {
   border-radius: 12px;
 }
 
-.tech-icons {
+.tech-icons, .soft-skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;

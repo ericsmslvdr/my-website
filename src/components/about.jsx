@@ -19,8 +19,13 @@ const About = () => {
                     <div class="about-skills">
                         <div className="soft-skills">
                             <span>Soft skills</span>
-                            <div className="soft-skills-wrapper">
-                                <div className="soft-skills-card">Fast Learner</div>
+                            <div className="soft-skills-container">
+                                <div className="soft-skills-wrapper">
+                                    <div className="soft-skills-card">Fast Learner</div>
+                                </div>
+                                <div className="soft-skills-wrapper">
+                                    <div className="soft-skills-card">Attention to Detail</div>
+                                </div>
                             </div>
                         </div>
                         <div className="technologies">
