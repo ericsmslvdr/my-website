@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section id="home">
             <div className="container">
-                <span className="name">Hello, I'm Eric!</span>
+                <span className="name">Hello, I'm Eric Samuel Salvador!</span>
                 <br />
                 <span className="address">Plaridel, Bulacan</span>
                 <br />

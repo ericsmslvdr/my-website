@@ -17,13 +17,15 @@ const Navbar = () => {
 
     return (
         <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
-            <div className="logo"><a href="#home">&lt;ericsmslvdr&#47;&gt;</a></div>
+            <div className="logo">
+                <a href="#home">&lt;<span>ericsmslvdr</span>&#47;&gt;</a>
+            </div>
             <div className="menu-bar">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contacts">CONTACT</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
             </div>
         </nav>

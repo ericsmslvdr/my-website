@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --background-color: #eaeaea;
-  --primary-color: #295b5a;
-  --secondary-color: #2a3a37;
-  --accent-color: #dccdc6;
+  --background-color: #1b2021;
+  --primary-color:#03c988;
+  --secondary-color: #435585;
+  --accent-color: #00337c;
+
+  --high-emphasis: #e0e0e0;
+  --mid-emphasis: #afafaf;
 }
 
 * {
@@ -12,7 +15,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: var(--primary-color);
 }
 
 html {
@@ -50,6 +52,7 @@ a {
   text-align: start;
   font-size: 2.2rem;
   font-weight: 700;
+  color: var(--primary-color);
 }
 
 
@@ -67,14 +70,17 @@ a {
 }
 
 .navbar.scrolled {
-  background-color: var(--accent-color);
-  border-bottom: 10px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
+.logo a {
   font-size: x-large;
   font-weight: 400;
+  color: var(--high-emphasis);
+}
+
+.logo span {
+  color: var(--high-emphasis);
 }
 
 .logo a:hover {
@@ -90,13 +96,17 @@ a {
   padding-left: 1.5rem;
 }
 
-.menu-bar a:hover {
+.menu-bar a {
   color: var(--primary-color);
+}
+
+.menu-bar a:hover {
+  color: var(--accent-color);
 }
 
 /* HOME SECTION */
 .name {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .address {
@@ -120,8 +130,8 @@ a {
 }
 
 .home-btn {
-  background-color: var(--primary-color);
-  color: var(--background-color);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
   padding: 10px 15px;
   border-radius: 8px;
   display: flex;
