@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --background-color: #1b2021;
-  --primary-color:#03c988;
-  --secondary-color: #435585;
-  --accent-color: #00337c;
+  --background-color: #0f172a;
+  --card: #334155;
+  --wrapper: #1e293b;
 
-  --high-emphasis: #e0e0e0;
-  --mid-emphasis: #afafaf;
+  --button:#0ea5e9;
+
+  --text-info: #94a3b8;
+  --text-title: #e2e8f0;
+
 }
 
 * {
@@ -52,7 +54,7 @@ a {
   text-align: start;
   font-size: 2.2rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--text-title);
 }
 
 
@@ -76,15 +78,15 @@ a {
 .logo a {
   font-size: x-large;
   font-weight: 400;
-  color: var(--high-emphasis);
+  color: var(--text-title);
 }
 
 .logo span {
-  color: var(--high-emphasis);
+  color: var(--text-title);
 }
 
 .logo a:hover {
-  color: var(--primary-color);
+  color: var(--button);
 }
 
 .menu-bar ul {
@@ -97,31 +99,33 @@ a {
 }
 
 .menu-bar a {
-  color: var(--primary-color);
+  color: var(--text-title);
 }
 
 .menu-bar a:hover {
-  color: var(--accent-color);
+  color: var(--button);
 }
 
 /* HOME SECTION */
 .name {
   font-size: 5rem;
+  color: var(--text-title);
 }
 
 .address {
   font-size: 2.5rem;
-  color: var(--secondary-color);
+  color: var(--text-info);
 }
 
 .info {
   font-size: 1.2rem;
   width: 50%;
   text-align: center;
+  color: var(--text-title);
 }
 
 .info span {
-  color: var(--secondary-color);
+  color: var(--text-info);
 }
 
 .home-button-wrapper {
@@ -130,8 +134,8 @@ a {
 }
 
 .home-btn {
-  background-color: var(--accent-color);
-  color: var(--primary-color);
+  background-color: var(--button);
+  color: var(--text-title);
   padding: 10px 15px;
   border-radius: 8px;
   display: flex;
@@ -217,12 +221,17 @@ p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: var(--card);
+  padding: 12px;
+  border-radius: 8px;
+  border-top: 0.5px solid #485466;
 }
 
 .icon-wrapper span {
+  padding-top: 6px;
   font-size: 14px;
   text-align: center;
-  color: var(--primary-color);
+  color: var(--text-info);
 }
 
 /* PROJECTS SECTION */
@@ -253,7 +262,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px 20%;
-  background-color: var(--accent-color);
+  background-color: var(--card);
+  border-top: 0.5px solid #485466;
 }
 
 footer .socmed {
@@ -262,12 +272,15 @@ footer .socmed {
   gap: 1.2rem;
 }
 
+footer p {
+  color: var(--text-title);
+}
+
 .socmed img {
   transition-duration: 0.3s;
 }
 
 .socmed img:hover {
-  color: var(--secondary-color);
   fill: #295b5a;
   scale: 1.1;
 }
