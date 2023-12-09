@@ -5,10 +5,11 @@
   --card: #334155;
   --wrapper: #1e293b;
 
-  --button:#0ea5e9;
+  --button: #0ea5e9;
 
   --text-info: #94a3b8;
-  --text-title: #e2e8f0;
+  --text-title: #f1f5f9;
+  --sub-title: #cbd5e1;
 
 }
 
@@ -199,6 +200,12 @@ p {
   gap: 10px;
 }
 
+.soft-skills span,
+.technologies span {
+  color: var(--sub-title);
+  font-size: 1.2rem;
+}
+
 .soft-skills-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -206,12 +213,15 @@ p {
 }
 
 .soft-skills-card {
-  background-color: red;
-  padding: 10px;
+  background-color: var(--card);
+  padding: 20px 10px;
   border-radius: 12px;
+  color: var(--text-info);
+  border-top: 0.5px solid #485466;
 }
 
-.tech-icons, .soft-skills-container {
+.tech-icons,
+.soft-skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -220,16 +230,16 @@ p {
 .icon-wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
   background-color: var(--card);
-  padding: 12px;
+  padding: 12px 14px;
   border-radius: 8px;
   border-top: 0.5px solid #485466;
   width: 80px;
 }
 
 .icon-wrapper span {
-  padding-top: 6px;
+  padding-top: 8px;
   font-size: 14px;
   text-align: center;
   color: var(--text-info);

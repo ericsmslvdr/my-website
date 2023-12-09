@@ -18,7 +18,7 @@ const About = () => {
                     </div>
                     <div class="about-skills">
                         <div className="soft-skills">
-                            <span className="section-title">Soft skills</span>
+                            <span>Soft skills</span>
                             <div className="soft-skills-container">
                                 <div className="soft-skills-wrapper">
                                     <div className="soft-skills-card">Fast Learner</div>
@@ -29,7 +29,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className="technologies">
-                            <span className="section-title">Technologies</span>
+                            <span>Technologies</span>
                             <div class="tech-icons">
                                 <div className="icon-wrapper">
                                     <img src="https://skillicons.dev/icons?i=html" alt="" />
